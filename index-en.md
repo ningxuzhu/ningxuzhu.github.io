@@ -3,7 +3,7 @@
   <tr>
     <td>
       <h1>Ningxu Zhu</h1>
-      <p><b>undergraduate</b></p>
+      <p><b>Undergraduate</b></p>
       <p><b>University of Science and Technology of China</b></p>
       <p><b>E-mail：ningxuzhu@mail.ustc.edu.cn</b></p>
       <a href="/index.html">中文版</a>
