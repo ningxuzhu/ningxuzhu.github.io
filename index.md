@@ -26,7 +26,6 @@
 
 ### 大二上学期
 <body>
-    <p>Click the button below to view the PDF file:</p>
     <a href="光学lec.pdf" target="_blank" rel="noopener noreferrer">光学重点</a>
 </body>
 </html>
