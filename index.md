@@ -22,6 +22,10 @@
 ## 课程资料
 ### 大一上学期
 
+<body>
+    <a href="B1笔记.pdf" target="_blank" rel="noopener noreferrer">数学分析B1</a>
+</body>
+
 ### 大一下学期
 
 ### 大二上学期
