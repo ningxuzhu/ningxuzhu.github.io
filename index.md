@@ -21,7 +21,11 @@
 
 ## 课程资料
 ### 大一上学期
+
 ### 大一下学期
+
 ### 大二上学期
+<a href="username.github.io/光学lec.pdf" target="_blank">PDF.</a>
 ### 大二下学期
+
 ### 大三上学期
