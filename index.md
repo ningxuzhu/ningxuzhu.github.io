@@ -19,7 +19,7 @@
 ## 最新消息
 
 
-## 课程资料
+## 部分课程笔记
 ### 大一上学期
 
 <body>
@@ -27,6 +27,10 @@
 </body>
 
 ### 大一下学期
+
+<body>
+    <a href="线代笔记.pdf" target="_blank" rel="noopener noreferrer">线性代数B1</a>
+</body>
 
 ### 大二上学期
 
