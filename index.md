@@ -25,7 +25,12 @@
 ### 大一下学期
 
 ### 大二上学期
-<a href="username.github.io/folder/光学lec.pdf" target="_blank">光学复习资料</a>
+<body>
+    <h1>Welcome to My GitHub Page</h1>
+    <p>Click the button below to view the PDF file:</p>
+    <a href="光学lec.pdf" target="_blank" rel="noopener noreferrer">View PDF</a>
+</body>
+</html>
 ### 大二下学期
 
 ### 大三上学期
