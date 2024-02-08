@@ -26,7 +26,9 @@
 
 ### 大二上学期
 <body>
-    <a href="光学lec.pdf" target="_blank" rel="noopener noreferrer">光学重点</a>
+    <a href="PDFS/光学lec.pdf" target="_blank" rel="noopener noreferrer">光学</a>
+  <a href="PDFS/复变函数lec.pdf" target="_blank" rel="noopener noreferrer">复变函数</a>
+  <a href="PDFS/概统.pdf" target="_blank" rel="noopener noreferrer">概率论与数理统计</a>
 </body>
 </html>
 
