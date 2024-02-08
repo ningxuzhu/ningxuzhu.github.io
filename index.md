@@ -29,7 +29,7 @@
 ### 大一下学期
 
 <body>
-    <a href="线代笔记.pdf" target="_blank" rel="noopener noreferrer">线性代数B1</a>
+    <a href="线性代数.pdf" target="_blank" rel="noopener noreferrer">线性代数B1</a>
 </body>
 
 ### 大二上学期
