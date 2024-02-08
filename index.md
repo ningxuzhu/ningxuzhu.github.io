@@ -26,8 +26,8 @@
 
 ### 大二上学期
 <body>
-    <a href="光学lec.pdf" target="_blank" rel="noopener noreferrer">光学</a>
-  <a href="复变函数lec.pdf" target="_blank" rel="noopener noreferrer">复变函数</a>
+    <a href="光学lec.pdf" target="_blank" rel="noopener noreferrer">光学A</a>
+  <a href="复变函数lec.pdf" target="_blank" rel="noopener noreferrer">复变函数A</a>
   <a href="概统.pdf" target="_blank" rel="noopener noreferrer">概率论与数理统计</a>
     <a href="电子技术基础.pdf" target="_blank" rel="noopener noreferrer">电子技术基础</a>
     <a href="现代媒介素养.pdf" target="_blank" rel="noopener noreferrer">现代媒介素养</a>
@@ -35,5 +35,11 @@
 </html>
 
 ### 大二下学期
+
+<body>
+    <a href="电动力学.pdf" target="_blank" rel="noopener noreferrer">电动力学A</a>
+  <a href="数理方程.pdf" target="_blank" rel="noopener noreferrer">数理方程</a>
+  <a href="原子物理.pdf" target="_blank" rel="noopener noreferrer">原子物理A</a>
+</html>
 
 ### 大三上学期
