@@ -26,9 +26,11 @@
 
 ### 大二上学期
 <body>
-    <a href="PDFS/光学lec.pdf" target="_blank" rel="noopener noreferrer">光学</a>
-  <a href="PDFS/复变函数lec.pdf" target="_blank" rel="noopener noreferrer">复变函数</a>
-  <a href="PDFS/概统.pdf" target="_blank" rel="noopener noreferrer">概率论与数理统计</a>
+    <a href="光学lec.pdf" target="_blank" rel="noopener noreferrer">光学</a>
+  <a href="复变函数lec.pdf" target="_blank" rel="noopener noreferrer">复变函数</a>
+  <a href="概统.pdf" target="_blank" rel="noopener noreferrer">概率论与数理统计</a>
+    <a href="电子技术基础.pdf" target="_blank" rel="noopener noreferrer">电子技术基础</a>
+    <a href="现代媒介素养.pdf" target="_blank" rel="noopener noreferrer">现代媒介素养</a>
 </body>
 </html>
 
