@@ -6,6 +6,7 @@
       <p><b>本科生</b></p>
       <p><b>中国科学技术大学</b></p>
       <p><b>邮箱：ningxuzhu@mail.ustc.edu.cn</b></p>
+      <p><b>QQ: 1697716767</b></p>
       <p><a href="/index-en.html">English Version</a></p>
     </td>
     <td width="25%">
