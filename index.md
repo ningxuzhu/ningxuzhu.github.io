@@ -1,5 +1,3 @@
-![](https://komarev.com/ghpvc/?username=ningxuzhu)
-
 <div>
 <table border="0">
   <tr>
@@ -53,3 +51,5 @@
 </body>
 
 ### 大三上学期
+
+![](https://komarev.com/ghpvc/?username=ningxuzhu)
