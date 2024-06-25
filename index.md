@@ -54,4 +54,12 @@
 
 ### 大三上学期
 
+
+### 大三下学期
+
+<body>
+    <a href="统计物理.pdf" target="_blank" rel="noopener noreferrer">热力学与统计物理A</a>
+</body>
+
+
 ![](https://komarev.com/ghpvc/?username=ningxuzhu)
