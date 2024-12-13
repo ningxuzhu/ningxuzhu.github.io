@@ -19,7 +19,7 @@
 ## Resume
 
 <body>
-    <a href="Ningxu_Zhu_resume_UC_Berkeley.pdf" target="_blank" rel="noopener noreferrer">数学分析B1</a>
+    <a href="Ningxu_Zhu_resume_UC_Berkeley.pdf" target="_blank" rel="noopener noreferrer">Resume_Ningxu</a>
 </body>
 
 ## Courses Notes
