@@ -2,12 +2,11 @@
 <table border="0">
   <tr>
     <td width="75%">
-      <h1>朱宁旭</h1>
-      <p><b>本科生</b></p>
-      <p><b>中国科学技术大学</b></p>
-      <p><b>邮箱：ningxuzhu@mail.ustc.edu.cn</b></p>
+      <h1>Ningxu Zhu</h1>
+      <p><b>Undergraduate</b></p>
+      <p><b>University of Science and Technology of China</b></p>
+      <p><b>E-mail：ningxuzhu1217@gmail.com</b></p>
       <p><b>QQ: 1697716767</b></p>
-      <p><a href="/index-en.html">English Version</a></p>
     </td>
     <td width="25%">
       <img src="/psc.jpg" width="100%">
@@ -17,12 +16,14 @@
 </div>
 
 
-## 最新消息
+## Resume
 
-在和光热打交道
+<body>
+    <a href="B1笔记.pdf" target="_blank" rel="noopener noreferrer">数学分析B1</a>
+</body>
 
 ## 部分课程笔记
-### 大一上学期
+### Freshman
 
 <body>
     <a href="B1笔记.pdf" target="_blank" rel="noopener noreferrer">数学分析B1</a>
