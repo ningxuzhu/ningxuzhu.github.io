@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,16 +24,23 @@
     .navbar a:hover {
       background-color: #575757;
     }
+    .content {
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
     
-  <div class="navbar">
-    <a href="#home">Home</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Course notes</a>
-    <a href="#links">Links</a>
-  </div>
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Course notes</a>
+  <a href="#links">Links</a>
+</div>
 
 
-<div>
+<div class="content">
 <table border="0">
   <tr>
     <td width="75%">
