@@ -10,21 +10,25 @@
       margin: 0;
       font-family: Arial, sans-serif;
     }
+    
     .header {
       background-color: black;
       color: white;
       text-align: center;
       padding: 20px;
     }
+    
     .navbar a {
       color: white;
       text-decoration: none;
       padding: 14px 20px;
       text-align: center;
     }
+    
     .navbar a:hover {
       background-color: #575757;
     }
+    
     .content {
       padding: 20px;
       text-align: center;
