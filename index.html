@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
         }
         .header {
             background-color: black;
@@ -37,14 +37,29 @@
             background-color: #575757;
         }
         .content {
+            display: flex;
+            flex-direction: row;
             padding: 20px;
-            width: 70%;
+            width: 100%;
         }
         .profile {
             width: 30%;
             background-color: #f4f4f4;
             padding: 20px;
             box-sizing: border-box;
+        }
+        .profile img {
+            display: block;
+            margin: 0 auto 10px;
+            border-radius: 50%;
+            max-width: 80%;
+        }
+        .profile p {
+            text-align: center;
+        }
+        .main-content {
+            width: 70%;
+            padding: 20px;
         }
         h2 {
             border-bottom: 2px solid #444;
@@ -62,16 +77,6 @@
         }
         .notes-section a:hover {
             text-decoration: underline;
-        }
-        
-        .profile img {
-            display: block;
-            margin: 0 auto 10px;
-            border-radius: 50%;
-            max-width: 80%;
-        }
-        .profile p {
-            text-align: center;
         }
     </style>
 </head>
@@ -95,37 +100,39 @@
         <a href="#links">Links</a>
     </div>
   
-    <div class="content" id="home">
+    <div class="content">
+        <div class="main-content" id="home">
             <a href="Ningxu_Zhu_resume_UC_Berkeley.pdf" target="_blank">Resume</a>
-    </div>
+        </div>
   
-    <div class="content" id="course-notes">
-        <h1>Course Notes</h1>
+        <div class="main-content" id="course-notes">
+            <h1>Course Notes</h1>
 
-        <!-- Freshman Section -->
-        <div class="notes-section">
-            <h2>Freshman</h2>
-            <a href="B1笔记.pdf" target="_blank" rel="noopener noreferrer">Mathematical Analysis B1</a>
-            <a href="线性代数.pdf" target="_blank" rel="noopener noreferrer">Linear Algebra B1</a>
-        </div>
+            <!-- Freshman Section -->
+            <div class="notes-section">
+                <h2>Freshman</h2>
+                <a href="B1笔记.pdf" target="_blank" rel="noopener noreferrer">Mathematical Analysis B1</a>
+                <a href="线性代数.pdf" target="_blank" rel="noopener noreferrer">Linear Algebra B1</a>
+            </div>
 
-        <!-- Sophomore Section -->
-        <div class="notes-section">
-            <h2>Sophomore</h2>
-            <a href="光学lec.pdf" target="_blank" rel="noopener noreferrer">Optics A</a>
-            <a href="复变函数lec.pdf" target="_blank" rel="noopener noreferrer">Complex Function A</a>
-            <a href="概统.pdf" target="_blank" rel="noopener noreferrer">Probability and Statistics</a>
-            <a href="电子技术基础.pdf" target="_blank" rel="noopener noreferrer">Electronic Technology Basics</a>
-            <a href="现代媒介素养.pdf" target="_blank" rel="noopener noreferrer">Modern Media Literacy</a>
-            <a href="电动力学.pdf" target="_blank" rel="noopener noreferrer">Electrodynamics A</a>
-            <a href="数理方程.pdf" target="_blank" rel="noopener noreferrer">Mathematical Equations</a>
-            <a href="原子物理.pdf" target="_blank" rel="noopener noreferrer">Atomic Physics A</a>
-        </div>
+            <!-- Sophomore Section -->
+            <div class="notes-section">
+                <h2>Sophomore</h2>
+                <a href="光学lec.pdf" target="_blank" rel="noopener noreferrer">Optics A</a>
+                <a href="复变函数lec.pdf" target="_blank" rel="noopener noreferrer">Complex Function A</a>
+                <a href="概统.pdf" target="_blank" rel="noopener noreferrer">Probability and Statistics</a>
+                <a href="电子技术基础.pdf" target="_blank" rel="noopener noreferrer">Electronic Technology Basics</a>
+                <a href="现代媒介素养.pdf" target="_blank" rel="noopener noreferrer">Modern Media Literacy</a>
+                <a href="电动力学.pdf" target="_blank" rel="noopener noreferrer">Electrodynamics A</a>
+                <a href="数理方程.pdf" target="_blank" rel="noopener noreferrer">Mathematical Equations</a>
+                <a href="原子物理.pdf" target="_blank" rel="noopener noreferrer">Atomic Physics A</a>
+            </div>
 
-        <!-- Junior Section -->
-        <div class="notes-section">
-            <h2>Junior</h2>
-            <a href="统计物理.pdf" target="_blank" rel="noopener noreferrer">Thermodynamics and Statistical Physics A</a>
+            <!-- Junior Section -->
+            <div class="notes-section">
+                <h2>Junior</h2>
+                <a href="统计物理.pdf" target="_blank" rel="noopener noreferrer">Thermodynamics and Statistical Physics A</a>
+            </div>
         </div>
     </div>
 </body>
