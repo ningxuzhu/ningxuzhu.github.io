@@ -7,6 +7,7 @@
       <p><b>University of Science and Technology of China</b></p>
       <p><b>E-mail：ningxuzhu1217@gmail.com</b></p>
       <p><b>QQ: 1697716767</b></p>
+      <p><b>WeChat: znx18082835881</b></p>
     </td>
     <td width="25%">
       <img src="/psc.jpg" width="100%">
