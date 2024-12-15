@@ -24,7 +24,7 @@
             width: 100%;
         }
 
-        /* Navigation bar with links */
+        /* Navigation bar */
         .navbar {
             background-color: #333;
             overflow: hidden;
@@ -41,70 +41,68 @@
             text-align: center;
         }
 
-        /* Change background color when hovering over navbar links */
+        /* Change background on hover */
         .navbar a:hover {
             background-color: #575757;
         }
 
-        /* Main content container */
-        .content {
-            display: flex;
-            flex-direction: column;
+        /* Page layout container: profile + content side-by-side */
+        .layout {
+            display: flex; /* Use flexbox to align sections side-by-side */
             padding: 20px;
-            margin-right: 30%; /* Reserve space on the right for the profile section */
-            box-sizing: border-box;
         }
 
-        /* Profile section fixed on the right side of the page */
+        /* Profile section styling */
         .profile {
-            position: fixed; /* Fix the profile section to the right side */
-            top: 0; /* Align to the top of the viewport */
-            right: 0; /* Stick to the right edge of the viewport */
-            width: 30%; /* Occupy 25% of the page width */
-            height: 100vh; /* Take full viewport height */
+            width: 25%; /* Occupies 25% of the width */
             background-color: #f4f4f4;
             padding: 20px;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
-            align-items: center; /* Center align the content */
-            overflow-y: auto; /* Allow scrolling if content exceeds the height */
+            align-items: center; /* Center align profile content */
         }
 
-        /* Styling for profile image */
+        /* Profile image styling */
         .profile img {
             display: block;
             margin: 0 auto 10px;
-            border-radius: 50%; /* Make the image circular */
+            border-radius: 50%; /* Circular image */
             max-width: 80%;
         }
 
-        /* Text alignment for profile paragraph */
+        /* Profile text alignment */
         .profile p {
             text-align: center;
         }
 
+        /* Main content styling */
+        .main-content {
+            width: 75%; /* Takes up the remaining 75% of space */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
         /* Section title styling */
         h2 {
-            border-bottom: 2px solid #444; /* Add underline effect for section titles */
+            border-bottom: 2px solid #444;
             padding-bottom: 10px;
         }
 
-        /* Notes section with links */
+        /* Notes section links */
         .notes-section {
             margin: 20px 0;
         }
 
-        /* Styling for links in the notes section */
         .notes-section a {
-            display: block; /* Make each link appear on a new line */
+            display: block; /* Each link on a new line */
             margin: 8px 0;
             color: #0066cc;
             text-decoration: none;
             font-size: 18px;
         }
 
-        /* Add underline effect when hovering over links */
+        /* Add underline effect when hovering */
         .notes-section a:hover {
             text-decoration: underline;
         }
@@ -124,47 +122,48 @@
         <a href="#links">Links</a>
     </div>
     
-    <!-- Profile Section (Fixed on the Right Side) -->
-    <div class="profile">
-        <img src="/psc.jpg" alt="Profile Picture">
-        <p><strong>Ningxu Zhu</strong></p>
-        <p>A Senior at University of Science and Technology of China</p>
-        <p>Email: ningxuzhu1217@gmail.com</p>
-        <p>QQ: 1697716767</p>
-        <p>WeChat: znx18082835881</p>
-    </div>
-    
-    <!-- Main Content Section -->
-    <div class="content">
-        <!-- Resume Link -->
-        <div class="main-content" id="home">
-            <a href="Ningxu_Zhu_resume_UC_Berkeley.pdf" target="_blank">Resume</a>
+    <!-- Main Layout Container -->
+    <div class="layout">
+        <!-- Profile Section -->
+        <div class="profile">
+            <img src="/psc.jpg" alt="Profile Picture">
+            <p><strong>Ningxu Zhu</strong></p>
+            <p>A Senior at University of Science and Technology of China</p>
+            <p>Email: ningxuzhu1217@gmail.com</p>
+            <p>QQ: 1697716767</p>
+            <p>WeChat: znx18082835881</p>
         </div>
-  
-        <!-- Course Notes Section -->
-        <div class="main-content" id="course-notes">
-            <!-- Freshman Notes -->
-            <div class="notes-section">
-                <h2>Freshman</h2>
-                <a href="B1笔记.pdf" target="_blank" rel="noopener noreferrer">Mathematical Analysis B1</a>
-                <a href="线性代数.pdf" target="_blank" rel="noopener noreferrer">Linear Algebra B1</a>
-            </div>
-            <!-- Sophomore Notes -->
-            <div class="notes-section">
-                <h2>Sophomore</h2>
-                <a href="光学lec.pdf" target="_blank" rel="noopener noreferrer">Optics A</a>
-                <a href="复变函数lec.pdf" target="_blank" rel="noopener noreferrer">Complex Function A</a>
-                <a href="概统.pdf" target="_blank" rel="noopener noreferrer">Probability and Statistics</a>
-                <a href="电子技术基础.pdf" target="_blank" rel="noopener noreferrer">Electronic Technology Basics</a>
-                <a href="现代媒介素养.pdf" target="_blank" rel="noopener noreferrer">Modern Media Literacy</a>
-                <a href="电动力学.pdf" target="_blank" rel="noopener noreferrer">Electrodynamics A</a>
-                <a href="数理方程.pdf" target="_blank" rel="noopener noreferrer">Mathematical Equations</a>
-                <a href="原子物理.pdf" target="_blank" rel="noopener noreferrer">Atomic Physics A</a>
-            </div>
-            <!-- Junior Notes -->
-            <div class="notes-section">
-                <h2>Junior</h2>
-                <a href="统计物理.pdf" target="_blank" rel="noopener noreferrer">Thermodynamics and Statistical Physics A</a>
+        
+        <!-- Main Content Section -->
+        <div class="main-content" id="home">
+            <!-- Resume Link -->
+            <a href="Ningxu_Zhu_resume_UC_Berkeley.pdf" target="_blank">Resume</a>
+
+            <!-- Course Notes Section -->
+            <div id="course-notes">
+                <!-- Freshman Notes -->
+                <div class="notes-section">
+                    <h2>Freshman</h2>
+                    <a href="B1笔记.pdf" target="_blank" rel="noopener noreferrer">Mathematical Analysis B1</a>
+                    <a href="线性代数.pdf" target="_blank" rel="noopener noreferrer">Linear Algebra B1</a>
+                </div>
+                <!-- Sophomore Notes -->
+                <div class="notes-section">
+                    <h2>Sophomore</h2>
+                    <a href="光学lec.pdf" target="_blank" rel="noopener noreferrer">Optics A</a>
+                    <a href="复变函数lec.pdf" target="_blank" rel="noopener noreferrer">Complex Function A</a>
+                    <a href="概统.pdf" target="_blank" rel="noopener noreferrer">Probability and Statistics</a>
+                    <a href="电子技术基础.pdf" target="_blank" rel="noopener noreferrer">Electronic Technology Basics</a>
+                    <a href="现代媒介素养.pdf" target="_blank" rel="noopener noreferrer">Modern Media Literacy</a>
+                    <a href="电动力学.pdf" target="_blank" rel="noopener noreferrer">Electrodynamics A</a>
+                    <a href="数理方程.pdf" target="_blank" rel="noopener noreferrer">Mathematical Equations</a>
+                    <a href="原子物理.pdf" target="_blank" rel="noopener noreferrer">Atomic Physics A</a>
+                </div>
+                <!-- Junior Notes -->
+                <div class="notes-section">
+                    <h2>Junior</h2>
+                    <a href="统计物理.pdf" target="_blank" rel="noopener noreferrer">Thermodynamics and Statistical Physics A</a>
+                </div>
             </div>
         </div>
     </div>
