@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <style>
+        /* General body styling */
         body {
             font-family: Times New Roman, serif;
             line-height: 1.6;
@@ -13,6 +14,8 @@
             display: flex;
             flex-direction: column;
         }
+
+        /* Header section at the top */
         .header {
             background-color: black;
             color: white;
@@ -20,6 +23,8 @@
             padding: 20px;
             width: 100%;
         }
+
+        /* Navigation bar with links */
         .navbar {
             background-color: #333;
             overflow: hidden;
@@ -27,67 +32,91 @@
             justify-content: center;
             width: 100%;
         }
+
+        /* Navigation links styling */
         .navbar a {
             color: white;
             text-decoration: none;
             padding: 15px 30px;
             text-align: center;
         }
+
+        /* Change background color when hovering over navbar links */
         .navbar a:hover {
             background-color: #575757;
         }
+
+        /* Main content container */
         .content {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             padding: 20px;
-            width: 100%;
+            margin-right: 30%; /* Reserve space on the right for the profile section */
+            box-sizing: border-box;
         }
+
+        /* Profile section fixed on the right side of the page */
         .profile {
-            width: 30%;
+            position: fixed; /* Fix the profile section to the right side */
+            top: 0; /* Align to the top of the viewport */
+            right: 0; /* Stick to the right edge of the viewport */
+            width: 30%; /* Occupy 25% of the page width */
+            height: 100vh; /* Take full viewport height */
             background-color: #f4f4f4;
             padding: 20px;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: center; /* Center align the content */
+            overflow-y: auto; /* Allow scrolling if content exceeds the height */
         }
+
+        /* Styling for profile image */
         .profile img {
             display: block;
             margin: 0 auto 10px;
-            border-radius: 50%;
+            border-radius: 50%; /* Make the image circular */
             max-width: 80%;
         }
+
+        /* Text alignment for profile paragraph */
         .profile p {
             text-align: center;
         }
-        .main-content {
-            width: 70%;
-            padding: 20px;
-        }
+
+        /* Section title styling */
         h2 {
-            border-bottom: 2px solid #444;
+            border-bottom: 2px solid #444; /* Add underline effect for section titles */
             padding-bottom: 10px;
         }
+
+        /* Notes section with links */
         .notes-section {
             margin: 20px 0;
         }
+
+        /* Styling for links in the notes section */
         .notes-section a {
-            display: block;
+            display: block; /* Make each link appear on a new line */
             margin: 8px 0;
             color: #0066cc;
             text-decoration: none;
             font-size: 18px;
         }
+
+        /* Add underline effect when hovering over links */
         .notes-section a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
+    <!-- Page Header -->
     <div class="header">
         <h1>Welcome to Ningxu Zhu's Website</h1>
     </div>
 
+    <!-- Navigation Bar -->
     <div class="navbar">
         <a href="#home">Home</a>
         <a href="#projects">Research</a>
@@ -95,6 +124,7 @@
         <a href="#links">Links</a>
     </div>
     
+    <!-- Profile Section (Fixed on the Right Side) -->
     <div class="profile">
         <img src="/psc.jpg" alt="Profile Picture">
         <p><strong>Ningxu Zhu</strong></p>
@@ -104,20 +134,22 @@
         <p>WeChat: znx18082835881</p>
     </div>
     
+    <!-- Main Content Section -->
     <div class="content">
-        
+        <!-- Resume Link -->
         <div class="main-content" id="home">
             <a href="Ningxu_Zhu_resume_UC_Berkeley.pdf" target="_blank">Resume</a>
         </div>
   
+        <!-- Course Notes Section -->
         <div class="main-content" id="course-notes">
-            <!-- Freshman Section -->
+            <!-- Freshman Notes -->
             <div class="notes-section">
                 <h2>Freshman</h2>
                 <a href="B1笔记.pdf" target="_blank" rel="noopener noreferrer">Mathematical Analysis B1</a>
                 <a href="线性代数.pdf" target="_blank" rel="noopener noreferrer">Linear Algebra B1</a>
             </div>
-            <!-- Sophomore Section -->
+            <!-- Sophomore Notes -->
             <div class="notes-section">
                 <h2>Sophomore</h2>
                 <a href="光学lec.pdf" target="_blank" rel="noopener noreferrer">Optics A</a>
@@ -129,7 +161,7 @@
                 <a href="数理方程.pdf" target="_blank" rel="noopener noreferrer">Mathematical Equations</a>
                 <a href="原子物理.pdf" target="_blank" rel="noopener noreferrer">Atomic Physics A</a>
             </div>
-            <!-- Junior Section -->
+            <!-- Junior Notes -->
             <div class="notes-section">
                 <h2>Junior</h2>
                 <a href="统计物理.pdf" target="_blank" rel="noopener noreferrer">Thermodynamics and Statistical Physics A</a>
