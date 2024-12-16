@@ -106,6 +106,35 @@
         .notes-section a:hover {
             text-decoration: underline;
         }
+        .section-container {
+            width: 70%;
+            margin: 20px 0;
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section heading styling */
+        .section-heading {
+            background-color: teal;
+            color: white;
+            padding: 10px;
+            font-size: 24px;
+            text-align: center;
+            margin: -20px -20px 20px -20px; /* Expand to section edges */
+            border-bottom: 3px solid white;
+        }
+
+        /* Subsection text */
+        .section-text {
+            font-size: 16px;
+            text-align: justify;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
     </style>
 </head>
 <body>
@@ -122,9 +151,7 @@
         <a href="#links">Links</a>
     </div>
     
-    <!-- Main Layout Container -->
     <div class="layout">
-        <!-- Profile Section -->
         <div class="profile">
             <img src="/psc.jpg" alt="Profile Picture">
             <p><strong>Ningxu Zhu</strong></p>
@@ -137,6 +164,17 @@
         <!-- Main Content Section -->
         <div class="main-content" id="home">
             <p style="font-size: 16px;">I enjoy playing a variety of sports, including tennis, badminton, swimming, and table tennis. In my free time, I like to read books on detective stories and philosophy. Additionally, I enjoy listening to pop music. Here is the resume that I used to apply for graduate programs. <a href="Ningxu_Zhu_resume_UC_Berkeley.pdf" target="_blank">Resume</a> </p>
+        </div>
+        
+        <div class="section-container">
+            <div class="section-heading">Rare Earth Ion Qubits</div>
+            <div class="section-text">
+                Rare earth ion impurity atoms in crystalline hosts feature electronic spin and optical transitions with long coherence times and the potential for strong interactions. 
+                Efficiently isolating and manipulating individual rare earth impurities is an outstanding challenge, however, since their optical transitions are typically E1-forbidden and therefore slow.
+            </div>
+            <div class="section-text">
+                Our research integrates single rare earth ions into nanophotonic optical structures that enhance emission rates by orders of magnitude. We focus on developing telecom-wavelength photon sources and quantum memories based on single Erbium ions.
+            </div>
         </div>
         
     </div>
