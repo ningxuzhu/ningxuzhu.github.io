@@ -48,26 +48,28 @@
 
         /* Page layout container: profile + content side-by-side */
         .layout {
-            display: flex; /* Use flexbox to align sections side-by-side */
+            display: flex; /* 横向排列 */
             padding: 20px;
+            gap: 20px; /* 添加间距 */
+            align-items: flex-start; /* 顶部对齐 */
         }
 
         /* Profile section styling */
         .profile {
-            width: 30%; /* Occupies 25% of the width */
+            width: 30%; /* 占30%宽度 */
             background-color: #f4f4f4;
             padding: 20px;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
-            align-items: center; /* Center align profile content */
+            align-items: center; /* 内容居中 */
         }
 
         /* Profile image styling */
         .profile img {
             display: block;
             margin: 0 auto 10px;
-            border-radius: 50%; /* Circular image */
+            border-radius: 50%; /* 圆形图片 */
             max-width: 80%;
         }
 
@@ -76,42 +78,18 @@
             text-align: center;
         }
 
-        /* Main content styling */
-        .main-content {
-            width: 70%; /* Takes up the remaining 75% of space */
-            padding: 20px;
-            box-sizing: border-box;
+        /* Section container to hold intro and hobbies vertically */
+        .section-vertical {
+            display: flex;
+            flex-direction: column; /* 竖着排列 */
+            width: 70%; /* 剩余空间 */
+            gap: 20px; /* 模块间的间距 */
         }
 
-        /* Section title styling */
-        h2 {
-            border-bottom: 2px solid #444;
-            padding-bottom: 10px;
-        }
-
-        /* Notes section links */
-        .notes-section {
-            margin: 20px 0;
-        }
-
-        .notes-section a {
-            display: block; /* Each link on a new line */
-            margin: 8px 0;
-            color: #0066cc;
-            text-decoration: none;
-            font-size: 16px;
-        }
-
-        /* Add underline effect when hovering */
-        .notes-section a:hover {
-            text-decoration: underline;
-        }
+        /* Individual section styling */
         .section-container {
-            width: 70%;
-            margin: 20px 0;
-            text-align: center;
-            padding: 20px;
             background-color: #f8f9fa;
+            padding: 20px;
             border: 1px solid #ddd;
             box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
         }
@@ -123,7 +101,7 @@
             padding: 10px;
             font-size: 24px;
             text-align: center;
-            margin: -20px -20px 20px -20px; /* Expand to section edges */
+            margin: -20px -20px 20px -20px; /* 横向扩展至边缘 */
             border-bottom: 3px solid white;
         }
 
@@ -132,9 +110,18 @@
             font-size: 16px;
             text-align: justify;
             color: #333;
-            margin-bottom: 10px;
         }
         
+        /* Resume link styling */
+        .section-text a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .section-text a:hover {
+            text-decoration: underline;
+        }
+
     </style>
 </head>
 <body>
@@ -151,7 +138,9 @@
         <a href="#links">Links</a>
     </div>
     
+    <!-- Main Layout -->
     <div class="layout">
+        <!-- Profile Section -->
         <div class="profile">
             <img src="/psc.jpg" alt="Profile Picture">
             <p><strong>Ningxu Zhu</strong></p>
@@ -160,22 +149,27 @@
             <p>WeChat: znx18082835881</p>
         </div>
         
-        <div class="section-container">
-            <div class="section-heading">Brief Introduction</div>
-            <div class="section-text">
-                I am a senior at University of Science and Technology of China, majoring physics.
+        <!-- Vertical Section: Brief Introduction and Hobbies -->
+        <div class="section-vertical">
+            <!-- Brief Introduction -->
+            <div class="section-container">
+                <div class="section-heading">Brief Introduction</div>
+                <div class="section-text">
+                    I am a senior at University of Science and Technology of China, majoring physics.
+                </div>
+            </div>
+
+            <!-- My Hobbies -->
+            <div class="section-container">
+                <div class="section-heading">My Hobbies</div>
+                <div class="section-text">
+                    I enjoy playing a variety of sports, including tennis, badminton, swimming, and table tennis. 
+                    In my free time, I like to read books on detective stories and philosophy. Additionally, I enjoy listening to pop music. 
+                    Here is the resume that I used to apply for graduate programs. 
+                    <a href="Ningxu_Zhu_resume_UC_Berkeley.pdf" target="_blank">Resume</a>
+                </div>
             </div>
         </div>
-        
-        <div class="section-container">
-            <div class="section-heading">My Hobbies</div>
-            <div class="section-text">
-                I enjoy playing a variety of sports, including tennis, badminton, swimming, and table tennis. 
-                In my free time, I like to read books on detective stories and philosophy. Additionally, I enjoy listening to pop music. 
-                Here is the resume that I used to apply for graduate programs. <a href="Ningxu_Zhu_resume_UC_Berkeley.pdf" target="_blank">Resume</a>
-            </div>
-        </div>
-        
     </div>
 </body>
 </html>
