@@ -3,106 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Notes</title>
+    <title>Course Notes | Ningxu Zhu</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
-        /* General body styling */
+        /* --- 全局变量 (与首页保持一致) --- */
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-color: #f3f6f9;
+            --card-bg: #ffffff;
+            --text-color: #4a5568;
+            --header-bg: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            --shadow: 0 10px 30px rgba(0,0,0,0.05);
+            --radius: 12px;
+        }
+
         body {
-            font-family: Times New Roman, serif;
-            line-height: 1.6;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
+            line-height: 1.6;
         }
 
-        /* Header section */
-        .header {
-            background-color: black;
+        /* --- Header & Navbar (完全复用) --- */
+        .site-header {
+            background: var(--header-bg);
             color: white;
+            padding: 50px 20px;
             text-align: center;
-            padding: 20px;
-            width: 100%;
         }
 
-        /* Navigation bar */
+        .site-header h1 { margin: 0; font-size: 2.2rem; font-weight: 700; }
+        
         .navbar {
-            background-color: #333;
-            overflow: hidden;
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
             display: flex;
             justify-content: center;
-            width: 100%;
+            padding: 0 10px;
         }
 
-        /* Navigation links styling */
         .navbar a {
-            color: white;
+            color: var(--primary-color);
             text-decoration: none;
-            padding: 15px 30px;
-            text-align: center;
+            padding: 16px 24px;
+            font-weight: 600;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
         }
 
-        .navbar a:hover {
-            background-color: #575757;
+        .navbar a:hover, .navbar a.active {
+            color: var(--accent-color);
+            border-bottom-color: var(--accent-color);
+            background-color: rgba(52, 152, 219, 0.05);
         }
 
-        /* Notes section */
-        .notes-section {
-            padding: 20px;
+        /* --- 笔记页面的特定布局 --- */
+        .notes-container {
+            max-width: 800px; /* 笔记列表不需要太宽，居中更易读 */
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            gap: 30px; /* 卡片之间的间距 */
         }
 
-        .notes-section h3 {
-            border-bottom: 2px solid #444;
-            padding-bottom: 10px;
+        /* 年级分类卡片 */
+        .year-card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 30px;
+            position: relative;
+            overflow: hidden;
         }
 
-        .notes-section a {
-            display: block;
-            margin: 8px 0;
-            color: #0066cc;
+        /* 左侧装饰条 */
+        .year-card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 4px;
+            background-color: var(--accent-color);
+        }
+
+        .year-title {
+            margin-top: 0;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .year-title i { color: #cbd5e0; font-size: 1.2rem; }
+
+        /* 笔记链接列表样式 */
+        .note-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 自适应两列或一列 */
+            gap: 15px;
+        }
+
+        .note-link {
+            display: flex;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 12px 15px;
+            border-radius: 8px;
             text-decoration: none;
-            font-size: 16px;
+            color: var(--text-color);
+            font-weight: 500;
+            border: 1px solid #eee;
+            transition: all 0.2s ease;
         }
 
-        .notes-section a:hover {
-            text-decoration: underline;
+        .note-link i {
+            color: #e74c3c; /* PDF图标用红色 */
+            font-size: 1.2rem;
+            margin-right: 12px;
+        }
+
+        /* 鼠标悬停效果 */
+        .note-link:hover {
+            background-color: #fff;
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+            transform: translateY(-2px); /* 微微上浮 */
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.15);
+        }
+
+        /* 响应式调整 */
+        @media (max-width: 600px) {
+            .note-list { grid-template-columns: 1fr; } /* 手机上变为单列 */
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <div class="header">
+
+    <div class="site-header">
         <h1>Course Notes</h1>
+        <p style="opacity: 0.8; margin-top: 10px;">A collection of my study notes from undergraduate courses.</p>
     </div>
 
-    <!-- Navigation Bar -->
     <div class="navbar">
         <a href="index.html">Home</a>
         <a href="research.html">Research</a>
-        <a href="notes.html">Course Notes</a>
-        <a href="#links">Links</a>
+        <a href="notes.html" class="active">Course Notes</a> <a href="index.html#links">Links</a>
     </div>
 
-    <!-- Course Notes Content -->
-    <div class="notes-section">
-        <!-- Freshman Notes -->
-        <h3>Freshman</h3>
-        <a href="B1笔记.pdf" target="_blank" rel="noopener noreferrer">Mathematical Analysis B1</a>
-        <a href="线性代数.pdf" target="_blank" rel="noopener noreferrer">Linear Algebra B1</a>
+    <div class="notes-container">
         
-        <!-- Sophomore Notes -->
-        <h3>Sophomore</h3>
-        <a href="光学lec.pdf" target="_blank" rel="noopener noreferrer">Optics A</a>
-        <a href="复变函数lec.pdf" target="_blank" rel="noopener noreferrer">Complex Function A</a>
-        <a href="概统.pdf" target="_blank" rel="noopener noreferrer">Probability and Statistics</a>
-        <a href="电子技术基础.pdf" target="_blank" rel="noopener noreferrer">Electronic Technology Basics</a>
-        <a href="现代媒介素养.pdf" target="_blank" rel="noopener noreferrer">Modern Media Literacy</a>
-        <a href="电动力学.pdf" target="_blank" rel="noopener noreferrer">Electrodynamics A</a>
-        <a href="数理方程.pdf" target="_blank" rel="noopener noreferrer">Mathematical Equations</a>
-        <a href="原子物理.pdf" target="_blank" rel="noopener noreferrer">Atomic Physics A</a>
+        <div class="year-card">
+            <h2 class="year-title"><i class="fas fa-graduation-cap"></i> Junior Year</h2>
+            <div class="note-list">
+                <a href="统计物理.pdf" class="note-link" target="_blank">
+                    <i class="far fa-file-pdf"></i> Thermodynamics & Stat. Phys A
+                </a>
+            </div>
+        </div>
 
-        <!-- Junior Notes -->
-        <h3>Junior</h3>
-        <a href="统计物理.pdf" target="_blank" rel="noopener noreferrer">Thermodynamics and Statistical Physics A</a>
+        <div class="year-card">
+            <h2 class="year-title"><i class="fas fa-book-reader"></i> Sophomore Year</h2>
+            <div class="note-list">
+                <a href="光学lec.pdf" class="note-link" target="_blank">
+                    <i class="far fa-file-pdf"></i> Optics A
+                </a>
+                <a href="复变函数lec.pdf" class="note-link" target="_blank">
+                    <i class="far fa-file-pdf"></i> Complex Function A
+                </a>
+                <a href="概统.pdf" class="note-link" target="_blank">
+                    <i class="far fa-file-pdf"></i> Probability and Statistics
+                </a>
+                <a href="电子技术基础.pdf" class="note-link" target="_blank">
+                    <i class="far fa-file-pdf"></i> Electronic Technology Basics
+                </a>
+                <a href="现代媒介素养.pdf" class="note-link" target="_blank">
+                    <i class="far fa-file-pdf"></i> Modern Media Literacy
+                </a>
+                <a href="电动力学.pdf" class="note-link" target="_blank">
+                    <i class="far fa-file-pdf"></i> Electrodynamics A
+                </a>
+                <a href="数理方程.pdf" class="note-link" target="_blank">
+                    <i class="far fa-file-pdf"></i> Mathematical Equations
+                </a>
+                <a href="原子物理.pdf" class="note-link" target="_blank">
+                    <i class="far fa-file-pdf"></i> Atomic Physics A
+                </a>
+            </div>
+        </div>
+
+        <div class="year-card">
+            <h2 class="year-title"><i class="fas fa-seedling"></i> Freshman Year</h2>
+            <div class="note-list">
+                <a href="B1笔记.pdf" class="note-link" target="_blank">
+                    <i class="far fa-file-pdf"></i> Mathematical Analysis B1
+                </a>
+                <a href="线性代数.pdf" class="note-link" target="_blank">
+                    <i class="far fa-file-pdf"></i> Linear Algebra B1
+                </a>
+            </div>
+        </div>
+
     </div>
+
 </body>
 </html>
