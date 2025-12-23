@@ -18,7 +18,7 @@
             --card-bg: #ffffff;
             --text-color: #4a5568;
             --header-bg: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            --shadow: 0 4px 20px rgba(0,0,0,0.06);
+            --shadow: 0 4px 20px rgba(0,0,0,0.06); /* 阴影稍微调淡一点，更适合居中 */
             --radius: 12px;
         }
 
@@ -65,15 +65,16 @@
 
         .navbar a:hover { color: var(--accent-color); background-color: rgba(52, 152, 219, 0.05); }
 
-        /* --- 核心布局 --- */
+        /* --- 核心布局修改开始 --- */
         
         .container {
+            /* 限制最大宽度，让内容居中且不至于在宽屏上太宽 */
             max-width: 800px; 
-            margin: 40px auto;
+            margin: 40px auto; /* 上下40px边距，左右自动居中 */
             padding: 0 20px;
             display: flex;
-            flex-direction: column;
-            gap: 30px;
+            flex-direction: column; /* 强制竖向排列 */
+            gap: 30px; /* 卡片之间的间距 */
         }
 
         /* 通用卡片样式 */
@@ -97,26 +98,24 @@
             background-color: var(--accent-color);
         }
 
-        /* --- Profile 区域样式 --- */
+        /* --- 合并后的 Profile + About 区域样式 --- */
         
         .profile-header {
-            text-align: center;
+            text-align: center; /* 让头像和名字居中 */
             margin-bottom: 30px;
             padding-bottom: 30px;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid #eee; /* 加一条分割线 */
         }
 
-        /* --- 修改了这里：增大了图片的宽高 --- */
         .profile-header img {
-            width: 180px;  /* 从 140px 改为 180px */
-            height: 180px; /* 从 140px 改为 180px */
+            width: 140px;
+            height: 140px;
             object-fit: cover;
             border-radius: 50%;
             border: 4px solid #f0f2f5;
             margin-bottom: 15px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
-        /* -------------------------------- */
 
         .profile-name {
             font-size: 1.8rem;
@@ -162,7 +161,7 @@
         /* 内容文字样式 */
         .section-text {
             color: #4a5568;
-            text-align: left;
+            text-align: left; /* 文字保持左对齐，便于阅读 */
         }
 
         .section-text ul { padding-left: 20px; }
@@ -196,7 +195,7 @@
         <div class="section-card">
             
             <div class="profile-header">
-                <img src="/psc.jpg" alt="Ningxu Zhu" onerror="this.src='https://via.placeholder.com/180?text=NZ'">
+                <img src="/psc.jpg" alt="Ningxu Zhu" onerror="this.src='https://via.placeholder.com/150?text=NZ'">
                 <div class="profile-name">Ningxu Zhu</div>
                 <div class="profile-info">
                     <i class="fas fa-university"></i> Rice University &nbsp;|&nbsp; 
