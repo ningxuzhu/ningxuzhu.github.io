@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
-        /* --- CSS 样式 (与主页完全一致，保证无缝切换体验) --- */
         :root {
             --primary-color: #2c3e50;
             --accent-color: #3498db;
@@ -37,7 +36,7 @@
         .site-header {
             background: var(--header-bg);
             color: white;
-            padding: 40px 20px; /* 稍微减小高度，区别于主页 */
+            padding: 50px 20px;
             text-align: center;
         }
 
@@ -76,7 +75,7 @@
             border-bottom-color: var(--accent-color);
         }
 
-        /* 布局容器 */
+        /* container */
         .container {
             max-width: 800px;
             margin: 40px auto;
@@ -86,7 +85,7 @@
             gap: 30px;
         }
 
-        /* 卡片通用样式 */
+        /* card */
         .section-card {
             background: var(--card-bg);
             padding: 40px;
@@ -121,9 +120,8 @@
         
         .section-title i { color: var(--accent-color); }
 
-        /* --- Research 页面特有样式 --- */
+        /* --- Research --- */
         
-        /* 论文列表样式 */
         .publication-list {
             list-style: none;
             padding: 0;
@@ -133,7 +131,7 @@
         .publication-item {
             margin-bottom: 25px;
             padding-bottom: 25px;
-            border-bottom: 1px dashed #e2e8f0; /* 虚线分隔每篇论文 */
+            border-bottom: 1px dashed #e2e8f0;
         }
 
         .publication-item:last-child {
@@ -178,7 +176,7 @@
             color: white;
         }
 
-        /* 强调我自己的名字 */
+        /* highlight my name */
         .me {
             font-weight: 600;
             text-decoration: underline;
