@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
-        /* --- 全局变量 (与首页保持一致) --- */
         :root {
             --primary-color: #2c3e50;
             --accent-color: #3498db;
@@ -33,7 +32,7 @@
             line-height: 1.6;
         }
 
-        /* --- Header & Navbar (完全复用) --- */
+        /* --- Header & Navbar --- */
         .site-header {
             background: var(--header-bg);
             color: white;
@@ -70,16 +69,16 @@
             background-color: rgba(52, 152, 219, 0.05);
         }
 
-        /* --- 笔记页面的特定布局 --- */
+        /* --- notes --- */
         .notes-container {
-            max-width: 800px; /* 笔记列表不需要太宽，居中更易读 */
+            max-width: 800px; 
             margin: 40px auto;
             padding: 0 20px;
             display: grid;
-            gap: 30px; /* 卡片之间的间距 */
+            gap: 30px; 
         }
 
-        /* 年级分类卡片 */
+        /* card */
         .year-card {
             background: var(--card-bg);
             border-radius: var(--radius);
@@ -89,7 +88,6 @@
             overflow: hidden;
         }
 
-        /* 左侧装饰条 */
         .year-card::before {
             content: '';
             position: absolute;
@@ -114,10 +112,9 @@
 
         .year-title i { color: #cbd5e0; font-size: 1.2rem; }
 
-        /* 笔记链接列表样式 */
         .note-list {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 自适应两列或一列 */
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
             gap: 15px;
         }
 
@@ -135,23 +132,22 @@
         }
 
         .note-link i {
-            color: #e74c3c; /* PDF图标用红色 */
+            color: #e74c3c; 
             font-size: 1.2rem;
             margin-right: 12px;
         }
 
-        /* 鼠标悬停效果 */
         .note-link:hover {
             background-color: #fff;
             border-color: var(--accent-color);
             color: var(--accent-color);
-            transform: translateY(-2px); /* 微微上浮 */
+            transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(52, 152, 219, 0.15);
         }
 
-        /* 响应式调整 */
+    
         @media (max-width: 600px) {
-            .note-list { grid-template-columns: 1fr; } /* 手机上变为单列 */
+            .note-list { grid-template-columns: 1fr; } 
         }
     </style>
 </head>
